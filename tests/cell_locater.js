@@ -1,6 +1,6 @@
 const parser = require('../table_parser');
 const utils = require('../utils');
-const FILE_PATH = '../sample_data/rx7_6pt_fuel_table.lte';
+const FILE_PATH = '../sample_data/tables/scott_rx7_s5_na_table.lte';
 
 let table_data;
 try {
@@ -8,8 +8,9 @@ try {
     table_data = parser(FILE_PATH);
     const rpm_header = table_data.x_data;
     const load_header = table_data.y_data;
-    // Test Cases
-    const test_a = utils.locateCell(load_header, rpm_header, 120, 8000);
+    // Test Case
+    console.log(table_data)
+    const test_a = utils.locateCell(load_header, rpm_header, -60, 1050);
     console.dir({
         ...test_a,
         ve: table_data.z[test_a.x][test_a.y]
