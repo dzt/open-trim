@@ -1,4 +1,4 @@
-const parser = require('../parser');
+const parser = require('../table_parser');
 const FILE_PATH = '../sample_data/rx7_6pt_fuel_table.lte';
 let table_data;
 try {
