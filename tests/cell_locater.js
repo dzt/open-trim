@@ -10,10 +10,10 @@ try {
     const load_header = table_data.y_data;
     // Test Case
     console.log(table_data)
-    const test_a = utils.locateCell(load_header, rpm_header, -20, 1050);
+    const test_a = utils.locateCell(load_header, rpm_header, -75.2, 2000);
     console.dir({
         ...test_a,
-        ve: table_data.z[test_a.x][test_a.y]
+        ve: table_data.z[test_a.y][test_a.x]
     });
 } catch (e) {
     console.error(e);
