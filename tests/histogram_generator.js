@@ -137,7 +137,7 @@ try {
         }
     }).on('end', () => {
         let print_table = [
-            ['RPM/Load', ...table_data.x_data],
+            ['Load/RPM', ...table_data.x_data],
         ];
         if (REVERSE_LOAD_AXIS) {
             for (let row = histo_data.length - 1; row >= 0; row--) {
