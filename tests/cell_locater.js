@@ -1,5 +1,5 @@
-const parser = require('../table_parser');
-const utils = require('../utils');
+const parser = require('../lib/table_parser');
+const utils = require('../lib/utils');
 const FILE_PATH = '../sample_data/tables/scott_rx7_s5_na_table.lte';
 
 let table_data;

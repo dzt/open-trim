@@ -4,8 +4,8 @@ const _ = require('underscore');
 const fs = require('fs');
 const csv = require('csv-parser');
 const { table } = require('table');
-const parser = require('../table_parser');
-const utils = require('../utils');
+const parser = require('../lib/table_parser');
+const utils = require('../lib/utils');
 
 const TABLE_FILE_PATH = '../sample_data/tables/scott_rx7_s5_na_table.lte';
 const LOG_FILE_PATH = '../sample_data/logs/scott_rx7_s5_na_log.csv';
@@ -95,8 +95,6 @@ try {
             }
         });
     });
-
-    // console.log(table_data)
 
     let header_config;
     fs.createReadStream(LOG_FILE_PATH).pipe(csv()).on('data', (data) => {
