@@ -10,6 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "fast-xml-parser": "^5.11.2"
+    "csv-parser": "^3.2.1",
+    "fast-xml-parser": "^5.11.2",
+    "table": "^6.9.0",
+    "underscore": "^1.13.8"
   }
 }
